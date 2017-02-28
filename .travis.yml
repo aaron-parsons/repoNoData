@@ -22,6 +22,8 @@ before_install:
   - conda list
   - conda install pyyaml
   - conda list
+  - ls
+  - pwd
 
 install:
   - conda env create --file environment.yml
