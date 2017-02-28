@@ -25,6 +25,7 @@ before_install:
   - conda list
   - ls
   - pwd
+  - ls ..
 
 install:
   - conda env create --file environment.yml
