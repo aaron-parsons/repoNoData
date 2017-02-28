@@ -6,8 +6,8 @@ test to se if we can load the data at least
 
 import unittest
 import tempfile
-import image_operations as im
-import test_utils as tu
+from . import image_operations as im
+from . import test_utils as tu
 
 class LoadingTest(unittest.TestCase):
     def test_load_relativity(self):
