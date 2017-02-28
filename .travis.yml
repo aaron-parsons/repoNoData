@@ -28,7 +28,7 @@ install:
   - source activate test-environment 
 
 script:
-  - py.test aaron-parsons/repoNoData/test/ -v --cov repoNoData --cov-report term-missing
+  - py.test aaron-parsons/repoNoData/tests/ -v --cov repoNoData --cov-report term-missing
 
 after_script:
   - coveralls
