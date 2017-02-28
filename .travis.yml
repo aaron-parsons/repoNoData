@@ -22,14 +22,15 @@ before_install:
   - conda list
   - conda install pyyaml
   - conda list
+  - ls
+  - pwd
 
 install:
   - conda env create --file environment.yml
   - source activate test-environment 
-  - python setup.py install
 
 script:
-  - py.test repoNoData/test/ -v --cov repoNoData --cov-report term-missing
+  - py.test tests/ -v --cov repoNoData --cov-report term-missing
 
 after_script:
   - coveralls
