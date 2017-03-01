@@ -1,4 +1,6 @@
 cache: apt
+  directories:
+  - $HOME/repo4data
 sudo: true
 language: python
 python:
