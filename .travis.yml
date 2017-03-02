@@ -1,6 +1,6 @@
 cache:
   directories:
-  - repo4data
+  - ../repo4data
 sudo: true
 language: python
 python:
